@@ -1,1 +1,60 @@
+<html lang="en">
+<head><title>Median</title>
+    <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    #Message {
+      width: 80%;
+      max-width: 1200px;
+    }
 
+    #Message div {
+      background-color: #CCC;
+      padding: 5px;
+    }
+
+    #Message div:nth-child(2n) {
+      background-color: #FFF;
+    }
+
+    #Send {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+      width: 80%;
+      display: flex;
+    }
+
+    #MessageInput {
+      flex-grow: 1;
+    }
+    input{
+        display: block;
+        height: 30px;
+        background-color: rgba(80, 26, 26, 0.07);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+}
+form{
+    position:fixed;
+    bottom:0;
+}
+</style></head>
+
+<body>
+    
+    <div id="Message"></div>
+  <form id="Send">
+    <input type="text" id="MessageInput">&nbsp;&nbsp;&nbsp;
+    <button type="submit" id="SendButton"> Send </button>
+  </form>
+</body>
+</html>
