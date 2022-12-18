@@ -1,4 +1,3 @@
-
 const socket = io('http://localhost:3000')
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
@@ -19,12 +18,12 @@ socket.on('user-connected', name => {
 socket.on('user-disconnected', name => {
   appendMessage(`${name} disconnected`)
 })
-
+// 1.sending message to form not server
 messageForm.addEventListener('submit', e => {
   e.preventDefault()
   const message = messageInput.value
   appendMessage(`You: ${message}`)
-  socket.emit('send-chat-message', message)
+  socket.emit('send-chat-message', message)//emitting to server
   messageInput.value = ''
 })
 
