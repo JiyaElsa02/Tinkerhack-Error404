@@ -1,0 +1,18 @@
+{
+  "name": "tinker",
+  "version": "1.0.0",
+  "description": "chatsystem",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "error404",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
